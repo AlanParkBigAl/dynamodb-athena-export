@@ -32,8 +32,7 @@ flowchart LR
   not the operational table.
 - **Cheap, serverless querying.** Athena bills per data scanned; nothing runs
   when nobody is querying.
-- **No crawler or manual partition repair.** `export_date` is a Glue
-  [partition projection](https://docs.aws.amazon.com/athena/latest/ug/partition-projection.html)
+- **No crawler or manual partition repair.** `export_date` is a Glue partition projection
   column, so new daily exports are queryable immediately.
 - **Guard rails.** The Athena workgroup enforces its result location, SSE-S3
   encryption and a per-query scan limit. Both buckets are private, encrypted
