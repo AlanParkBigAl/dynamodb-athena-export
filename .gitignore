@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!example.tfvars
+out.json
+
+# Lambda build output
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Misc
+.DS_Store
